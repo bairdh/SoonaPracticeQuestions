@@ -15,9 +15,9 @@ const phrase8 = ",\n,one,\n ,two \n 'three'"
 
  const countWords = phrase => {
      // removes all punctuation but adds spaces for new lines and commas
-    const stripedPhrase = phrase.toLowerCase().replace(/[.\/#!$%@\^&\*;:{}=\-_`~()"]/g, "").replace(/[\n,]/g, " ");
+    const strippedPhrase = phrase.toLowerCase().replace(/[.\/#!$%@\^&\*;:{}=\-_`~()"]/g, "").replace(/[\n,]/g, " ");
     // spits the string up into an array of words
-    const phraseArray = stripedPhrase.split(" ").sort();
+    const phraseArray = strippedPhrase.split(" ").sort();
     // creates the object to return
     let wordsObject = {};
     // loops through the array
